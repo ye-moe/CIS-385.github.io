@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>BMCC Mobile Gaming Website</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+  <script src="js/cookiemanager.js"></script>
+  <script src="js/Login.js"></script>
+
+  <script>
+    function logoff()
+    {
+        delCookie("flag","",-1);
+        delCookie("whoami", "", -1);
+        location.href="login.html";
+    }
+  </script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="login.html">BMCC <span class="logo_colour">Mobile Gaming Website</span></a></h1>
+          <h2>All the games you love... In one place...</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <script src="js/menu.js"></script>
+          <li class="selected"><a href="logoff.html">Logoff</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="padding:5.5px"></p><p></p>
+    <div id="site_content">
+      <div class="sidebar">
+        <h1>Search</h1>
+        <form method="post" action="#" id="search_form">
+          <p>
+            <input class="search" type="text" name="search_field" value="Enter keywords....." />
+            <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+          </p>
+        </form>
+      </div>
+      <div id="content">
+        <h1>Logoff</h1>
+        <p style="padding:4px;"><strong>You have successfully logged off:</strong> Log in Again to Manage Your Mobile Gaming Activities. <br/><br/>
+            <span style="float:left;text-align:left;padding:.5em;">
+                <a href="login.html">Login</a>
+              </span>
+        <p></p>
+        </p>
+        <form action="#" method="post"></form>
+      </div>
+    </div><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><br/><br/><br/>
+    <div id="footer">
+        <p><a href="login.html">Login</a> | <a href="register.html">Register</a></p>
+        <p>Copyright &copy; <a href="home.html">BMCC Mobile Gaming Website</a> | <a href="https://hsr.hoyoverse.com/en-us/home?utm_source=hsrofficialweb&utm_medium=fab&utm_campaign=button">Honkai Star Rail</a> | <a href="https://www.stardewvalley.net/">Stardew Valley</a> | <a href="https://www.supergiantgames.com/games/transistor">Transistor</a></p>
+      </div>
+    </div>
+  <div style="text-align: center; font-size: 0.75em;">Design template from 
+  <a href="http://www.freewebtemplates.com/">Professor Jose Vargas</a>.</div>
+</body>
+</html>
